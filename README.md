@@ -7,6 +7,11 @@ Versão 2 (11/11/2026), conceito "o letreiro e o dia de jogo":
 - o método aplicado ao paciente e a escolha "Qual é o seu jogo?" (musculação, corrida, futebol, emagrecer);
 - placar das avaliações, cronômetro do acompanhamento, consultório e a parede da carreira (concreto e ripas de madeira).
 
+Ajustes no celular (11/11/2026):
+- os cartões da abertura ficam no canto de baixo da foto, longe do rosto;
+- "Um dia de jogo" também anima no celular: a foto fica fixa no alto e troca a cada etapa enquanto o texto rola por baixo;
+- as avaliações viram uma fileira que se arrasta com o dedo, com cada avaliação inteira (no desktop continua a esteira automática).
+
 HTML, CSS e JavaScript puros, sem build. Todos os botões de agendamento abrem o WhatsApp.
 
 ## Estrutura
@@ -45,6 +50,10 @@ Todas as fotos são do Instagram do Pedro. Nenhuma foi gerada por IA.
    - Build Command: vazio
    - Output Directory: vazio (raiz)
 3. Clique em **Deploy**. O site fica em https://nutri-pedrosalvadori.vercel.app/ e cada novo commit publica a atualização sozinho.
+
+## Atualizar o site já publicado
+
+Para atualizar um site que já está no ar, envie o `index.html` novo (e o `README.md`, se quiser) para o repositório. A pasta `img` só precisa subir de novo quando alguma imagem mudar. A Vercel publica sozinha depois do commit.
 
 ## Imagens
 
