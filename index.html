@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pedro Salvadori | Nutricionista esportivo em Salto, SP</title>
+<meta name="description" content="Nutrição de clube para o seu treino. Pedro Salvadori é nutricionista esportivo do Sub-20 do Desportivo Brasil, com especialização no Barça Innovation Hub. Consultório em Salto, SP, e atendimento on-line. 5,0 no Google.">
+<meta name="theme-color" content="#0D0E0F">
+<link rel="canonical" href="https://nutri-pedrosalvadori.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Pedro Salvadori | Nutrição de clube para o seu treino">
+<meta property="og:description" content="Nutricionista esportivo do Sub-20 do Desportivo Brasil. Consultório em Salto, SP, e atendimento on-line.">
+<meta property="og:url" content="https://nutri-pedrosalvadori.vercel.app/">
+<meta property="og:image" content="https://nutri-pedrosalvadori.vercel.app/img/pedro-estadio.jpg?v=1">
+<link rel="icon" type="image/png" href="img/favicon.png?v=2">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wdth,wght@0,100,400..700;0,125,600..800;1,125,600..800&family=Saira+Extra+Condensed:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carbono:#0D0E0F; --grafite:#18191B; --chumbo:#26292C;
+  --nevoa:#EDECE8; --concreto:#D3D1CC; --branco:#F7F7F4;
+  --madeira:#B8854F; --madeira-2:#94673A; --madeira-3:#6E4A28;
+  --ps:#76C82A; --neon:#8BE52A; --ps-tinta:#3B700F;
+  --tinta:#141517; --cinza:#55585D; --cinza-claro:#A6AAAF;
+  --linha-c:rgba(247,247,244,.12); --linha-e:rgba(20,21,23,.12);
+  --brilho:0 0 6px rgba(139,229,42,.65),0 0 24px rgba(139,229,42,.28);
+  --cond:'Saira Extra Condensed','Arial Narrow',sans-serif;
+  --sans:'Saira',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1); --ease-io:cubic-bezier(.65,0,.35,1);
+  --gut:clamp(20px,5vw,72px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--nevoa);color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,figure,blockquote,dl,dd,ol,ul{margin:0}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:2px}
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 var(--gut)}
+.pular{position:absolute;left:12px;top:-60px;z-index:200;background:var(--neon);color:var(--carbono);padding:10px 16px;font-weight:700;text-decoration:none}
+.pular:focus{top:12px}
+.ico{width:20px;height:20px;flex:none}
+.escuro-s{background:var(--carbono);color:var(--branco)}
+
+/* Tipos */
+.titulo{font-family:var(--cond);font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:.005em;font-size:clamp(2.6rem,5.6vw,4.9rem);text-wrap:balance}
+.titulo .aceso{color:var(--ps-tinta)}
+.escuro-s .titulo .aceso{color:var(--neon);text-shadow:0 0 18px rgba(139,229,42,.35)}
+.lead{font-size:clamp(1.02rem,1.25vw,1.14rem);max-width:58ch;color:var(--cinza);margin-top:18px;text-wrap:pretty}
+.escuro-s .lead{color:var(--cinza-claro)}
+.cabeca{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:24px 56px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.cabeca .lead{margin-top:0}
+.secao{padding:clamp(80px,10vw,136px) 0;position:relative}
+
+/* Régua dos posts */
+.regua{display:flex;justify-content:space-between;gap:0;height:22px;align-items:flex-end}
+.regua i{width:2px;height:14px;background:currentColor;opacity:.35;border-radius:1px}
+.regua i:nth-child(5n+1){height:22px;opacity:.6}
+
+/* Botões: o corte inclinado do logo */
+.btn{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 26px;font-family:var(--sans);font-weight:700;font-size:.98rem;color:var(--carbono);text-decoration:none;white-space:nowrap;cursor:pointer;transition:transform .18s var(--ease)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--neon);transform:skewX(-14deg);border-radius:3px;transition:box-shadow .25s var(--ease),background-color .25s}
+.btn:hover::before{box-shadow:var(--brilho);background:#9BF03A}
+.btn:active{transform:scale(.97)}
+.btn-linha{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;padding:10px 0;border-bottom:1px solid currentColor;min-height:44px}
+.btn-linha svg{width:18px;height:18px;transition:transform .3s var(--ease)}
+.btn-linha:hover svg{transform:translateY(3px)}
+.link{font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:var(--ps)}
+
+/* Marca */
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;min-height:44px}
+.marca svg{width:58px;height:21px;color:var(--ps);flex:none}
+.marca b{display:block;font-style:italic;font-stretch:125%;font-weight:700;font-size:.92rem;letter-spacing:.05em;line-height:1.05;text-transform:uppercase}
+.marca small{display:block;font-style:italic;font-stretch:125%;font-weight:600;font-size:.69rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ps-tinta);margin-top:2px}
+
+/* Topo */
+.topo{position:fixed;inset:0 0 auto;z-index:100;color:var(--branco);transition:background-color .3s,color .3s,box-shadow .3s}
+.topo .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.topo .marca small{color:var(--neon)}
+.topo nav{margin-left:auto}
+.menu{display:flex;gap:26px}
+.menu a{font-size:.9rem;font-weight:500;text-decoration:none;opacity:.86;padding:10px 0;position:relative}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:2px;background:var(--neon);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.menu a:hover{opacity:1}.menu a:hover::after{transform:scaleX(1)}
+.topo.rolou{background:rgba(237,236,232,.9);color:var(--tinta);box-shadow:0 1px 0 var(--linha-e);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.topo.rolou .marca small{color:var(--ps-tinta)}
+.topo.rolou.escuro{background:rgba(13,14,15,.86);color:var(--branco);box-shadow:0 1px 0 var(--linha-c)}
+.topo.rolou.escuro .marca small{color:var(--neon)}
+.abrir{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;color:inherit;cursor:pointer;position:relative}
+.abrir span{position:absolute;left:12px;right:12px;height:2px;background:currentColor;transition:transform .3s var(--ease),opacity .2s}
+.abrir span:nth-child(1){top:16px}.abrir span:nth-child(2){top:23px}.abrir span:nth-child(3){top:30px}
+.aberto .abrir span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.aberto .abrir span:nth-child(2){opacity:0}
+.aberto .abrir span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.gaveta{position:fixed;inset:0;z-index:90;background:var(--carbono);color:var(--branco);padding:104px var(--gut) 40px;display:flex;flex-direction:column;gap:4px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.gaveta a:not(.btn){font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:2.3rem;line-height:1.15;text-decoration:none;padding:4px 0}
+.gaveta .btn{margin-top:24px;align-self:flex-start}
+.aberto .gaveta{opacity:1;visibility:visible}
+.aberto .topo{background:var(--carbono);color:var(--branco);box-shadow:none}
+
+/* ===== Abertura ===== */
+.abertura{min-height:100svh;background:var(--carbono);color:var(--branco);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:112px 0 0}
+.abertura::before{content:"";position:absolute;inset:0 0 0 52%;background:repeating-linear-gradient(90deg,rgba(184,133,79,.16) 0 16px,transparent 16px 26px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent);mask-image:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent);pointer-events:none}
+.abertura::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(transparent,rgba(13,14,15,.9));pointer-events:none}
+.heroi{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:56px;align-items:center}
+.letreiro{display:block;width:clamp(150px,15vw,224px);height:auto;overflow:visible;margin-bottom:clamp(22px,3vw,36px);filter:drop-shadow(0 0 5px rgba(139,229,42,.75)) drop-shadow(0 0 22px rgba(139,229,42,.35))}
+.letreiro path{fill:var(--neon);stroke:var(--neon);stroke-width:1.4;stroke-linejoin:round}
+.letreiro-nome{display:block;font-style:italic;font-stretch:125%;font-weight:700;letter-spacing:.07em;text-transform:uppercase;font-size:clamp(.82rem,1.1vw,.98rem);color:var(--concreto);margin:-14px 0 4px}
+.letreiro-nome small{display:block;color:var(--neon);font-weight:600;font-size:.66em;letter-spacing:.24em;margin-top:2px}
+.abertura h1{font-family:var(--cond);font-weight:800;text-transform:uppercase;line-height:.88;font-size:clamp(3rem,5.7vw,5.9rem);letter-spacing:.003em;margin-top:clamp(20px,2.6vw,30px)}
+.abertura h1 .l{display:block;overflow:hidden;padding:.1em 0 .04em;margin-top:-.1em}
+.abertura h1 .l>span{display:block}
+.abertura h1 .aceso{color:var(--neon);text-shadow:0 0 22px rgba(139,229,42,.4)}
+.sub{font-size:clamp(1.04rem,1.3vw,1.18rem);color:var(--cinza-claro);max-width:48ch;margin-top:24px}
+.sub b{color:var(--branco);font-weight:600}
+.acoes{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px;margin-top:34px}
+.nota{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nota .num{font-family:var(--cond);font-weight:800;font-size:2.9rem;line-height:1;color:var(--neon)}
+.nota .rot{display:flex;flex-direction:column;font-size:.86rem;line-height:1.35;color:var(--cinza-claro)}
+.estrelas{display:flex;gap:2px;color:var(--neon)}
+.estrelas svg{width:15px;height:15px}
+.quadro{position:relative;justify-self:end;width:min(100%,520px)}
+.foto-hero{position:relative;aspect-ratio:4/5;max-height:calc(100svh - 190px);width:100%;overflow:hidden;border-radius:4px;background:var(--grafite)}
+.foto-hero img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.foto-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,14,15,.55));pointer-events:none}
+.quadro::before{content:"";position:absolute;left:-14px;top:12%;bottom:12%;width:3px;background:var(--neon);box-shadow:var(--brilho);border-radius:2px;z-index:2}
+.vidro{position:absolute;z-index:3;display:flex;align-items:center;gap:12px;padding:12px 16px 12px 12px;border-radius:6px;background:rgba(13,14,15,.62);border:1px solid rgba(247,247,244,.14);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 18px 40px -16px rgba(0,0,0,.6)}
+.vidro strong{display:block;font-size:.95rem;line-height:1.2}
+.vidro span>span{display:block;font-size:.78rem;color:var(--cinza-claro);line-height:1.3}
+.vidro .ic{width:38px;height:38px;border-radius:5px;display:grid;place-items:center;background:rgba(139,229,42,.14);color:var(--neon);flex:none}
+.vidro .ic svg{width:21px;height:21px}
+.v1{left:-48px;bottom:16%}
+.v2{right:-22px;top:9%}
+.regua-heroi{position:relative;z-index:2;color:var(--neon);margin-top:clamp(36px,5vh,64px);padding-bottom:22px}
+.regua-heroi .regua i{opacity:.22}
+.regua-heroi .regua i.on{opacity:.9;box-shadow:0 0 6px rgba(139,229,42,.6)}
+
+/* Entrada da abertura */
+.js .letreiro path{fill-opacity:0;stroke-dasharray:1;stroke-dashoffset:1}
+.js .abertura h1 .l>span{transform:translateY(105%)}
+.js .letreiro-nome,.js .sub,.js .acoes{opacity:0;transform:translateY(14px)}
+.js .foto-hero{clip-path:inset(100% 0 0 0)}
+.js .quadro::before{transform:scaleY(0)}
+.js .vidro{opacity:0;transform:translateY(10px) scale(.96)}
+.carregou .letreiro path{animation:tracar 1s var(--ease-io) forwards,acender .9s linear 1s forwards}
+@keyframes tracar{to{stroke-dashoffset:0}}
+@keyframes acender{0%{fill-opacity:.9}8%{fill-opacity:.15}16%{fill-opacity:.95}24%{fill-opacity:.3}40%{fill-opacity:1}52%{fill-opacity:.55}62%,100%{fill-opacity:1}}
+.carregou .abertura h1 .l>span{transform:none;transition:transform .9s var(--ease)}
+.carregou .abertura h1 .l:nth-child(1)>span{transition-delay:.35s}
+.carregou .abertura h1 .l:nth-child(2)>span{transition-delay:.45s}
+.carregou .letreiro-nome{opacity:1;transform:none;transition:opacity .6s .9s,transform .6s var(--ease) .9s}
+.carregou .sub{opacity:1;transform:none;transition:opacity .6s .7s,transform .7s var(--ease) .7s}
+.carregou .acoes{opacity:1;transform:none;transition:opacity .6s .82s,transform .7s var(--ease) .82s}
+.carregou .foto-hero{clip-path:inset(0 0 0 0);transition:clip-path 1.1s var(--ease-io) .25s}
+.carregou .quadro::before{transform:none;transition:transform .8s var(--ease) 1.1s}
+.carregou .vidro{opacity:1;transform:none;transition:opacity .5s,transform .6s var(--ease)}
+.carregou .v2{transition-delay:1.25s}.carregou .v1{transition-delay:1.4s}
+
+/* ===== Um dia de jogo ===== */
+.jogo-dia{background:var(--nevoa)}
+.jornada{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:clamp(40px,6vw,96px)}
+.palco{position:sticky;top:96px;height:calc(100svh - 128px);min-height:520px;border-radius:6px;overflow:hidden;background:var(--carbono);color:var(--branco)}
+.palco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .7s var(--ease),transform 1.4s var(--ease)}
+.palco img.ativa{opacity:1;transform:none}
+.palco::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,15,.35),transparent 28%,transparent 52%,rgba(13,14,15,.92));pointer-events:none}
+.fase{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px 28px 24px}
+.fase-topo{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.fase-n{font-family:var(--cond);font-weight:800;font-size:4.6rem;line-height:.8;color:var(--neon);text-shadow:0 0 20px rgba(139,229,42,.45);font-variant-numeric:tabular-nums}
+.fase-n small{font-size:.38em;color:var(--cinza-claro);text-shadow:none;margin-left:4px}
+.fase-nome{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.7rem;line-height:1;text-align:right}
+.fase .regua{margin-top:18px;color:var(--branco)}
+.fase .regua i{opacity:.22;transition:opacity .4s,background-color .4s,box-shadow .4s}
+.fase .regua i.on{opacity:1;background:var(--neon);box-shadow:0 0 6px rgba(139,229,42,.6)}
+.selo-clube{position:absolute;top:22px;left:24px;z-index:2;display:flex;align-items:center;gap:10px;font-size:.8rem;font-weight:600;padding:8px 12px 8px 10px;border-radius:5px;background:rgba(13,14,15,.55);border:1px solid rgba(247,247,244,.14);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.selo-clube svg{width:18px;height:18px;color:var(--neon)}
+.etapas{display:flex;flex-direction:column}
+.etapa{min-height:62svh;display:flex;flex-direction:column;justify-content:center;padding:24px 0;border-top:1px solid var(--linha-e);transition:opacity .45s}
+.etapa:first-child{border-top:0;min-height:48svh;justify-content:flex-start;padding-top:8px}
+.etapa:last-child{min-height:56svh}
+.js .etapa{opacity:.32}
+.js .etapa.ativa{opacity:1}
+.etapa .n{font-family:var(--cond);font-weight:800;font-size:1rem;letter-spacing:.06em;color:var(--ps-tinta);display:flex;align-items:center;gap:10px}
+.etapa .n::after{content:"";height:2px;width:36px;background:var(--ps)}
+.etapa h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,3.3vw,2.9rem);line-height:.95;margin-top:12px}
+.etapa p{margin-top:14px;color:var(--cinza);max-width:46ch}
+.etapa p b{color:var(--tinta);font-weight:600}
+.etapa figure{display:none}
+.dados{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:20px;background:var(--linha-e);border:1px solid var(--linha-e);border-radius:5px;overflow:hidden;max-width:440px}
+.dados div{background:var(--branco);padding:12px 14px}
+.dados dt{font-size:.74rem;color:var(--cinza);line-height:1.3}
+.dados dd{font-family:var(--cond);font-weight:800;font-size:1.25rem;line-height:1.1;margin-top:2px}
+.ponte{margin-top:clamp(40px,6vw,72px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;padding:28px 32px;border-radius:6px;background:var(--carbono);color:var(--branco)}
+.ponte p{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,2.6vw,2.3rem);line-height:1}
+.ponte p span{color:var(--neon)}
+
+/* ===== Método ===== */
+.metodo{background:var(--carbono);color:var(--branco);overflow:hidden}
+.met-grade{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:clamp(28px,4vw,56px);align-items:stretch}
+.met-foto{position:relative;border-radius:6px;overflow:hidden;min-height:520px;background:var(--grafite)}
+.met-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.met-foto:hover img{transform:scale(1.025)}
+.etq{position:absolute;left:16px;bottom:16px;z-index:2;font-size:.8rem;font-weight:600;padding:7px 12px;border-radius:4px;background:rgba(13,14,15,.7);color:var(--branco);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.etq i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon);margin-right:8px;vertical-align:1px}
+.pilares{display:flex;flex-direction:column}
+.pilar{display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;padding:26px 0;border-top:1px solid var(--linha-c)}
+.pilar:first-child{border-top:0;padding-top:4px}
+.pilar .ic{width:52px;height:52px;border-radius:6px;display:grid;place-items:center;border:1px solid rgba(139,229,42,.35);color:var(--neon)}
+.pilar .ic svg{width:24px;height:24px}
+.pilar h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.75rem;line-height:1}
+.pilar p{color:var(--cinza-claro);margin-top:8px;max-width:52ch}
+.pilar q{display:block;margin-top:12px;color:var(--branco);font-style:italic;quotes:"“" "”"}
+.pilar q+small{display:block;color:var(--cinza-claro);font-size:.8rem;margin-top:2px}
+.seujogo{margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr);border-radius:6px;overflow:hidden;border:1px solid var(--linha-c);background:var(--grafite)}
+.sj-lado{padding:clamp(26px,3.4vw,44px)}
+.sj-lado h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,3.2vw,2.8rem);line-height:.95}
+.sj-lado>p{color:var(--cinza-claro);margin-top:10px;font-size:.96rem;max-width:40ch}
+.sj-abas{position:relative;display:flex;flex-direction:column;gap:6px;margin-top:26px}
+.sj-aba{position:relative;z-index:1;display:flex;align-items:baseline;justify-content:space-between;gap:12px;width:100%;min-height:56px;text-align:left;background:none;border:0;border-radius:5px;padding:14px 18px;color:var(--branco);cursor:pointer;font:inherit;transition:color .3s,background-color .25s}
+.sj-aba b{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.65rem;line-height:1}
+.sj-aba span{font-size:.8rem;color:var(--cinza-claro);transition:color .3s}
+.sj-aba:hover{background:rgba(247,247,244,.05)}
+.sj-aba[aria-selected=true]{color:var(--carbono);background:transparent}
+.sj-aba[aria-selected=true] span{color:rgba(13,14,15,.72)}
+.sj-aba:active{transform:scale(.985)}
+.sj-luz{position:absolute;left:0;right:0;top:0;height:56px;z-index:0;border-radius:5px;background:var(--neon);box-shadow:var(--brilho);transition:transform .45s var(--ease),height .45s var(--ease)}
+.sj-paineis{display:grid;background:var(--carbono);border-left:1px solid var(--linha-c)}
+.sj-painel,.sj-painel[hidden]{grid-area:1/1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);visibility:hidden;opacity:0;transition:opacity .3s,visibility 0s .3s}
+.sj-painel.ativo{visibility:visible;opacity:1;transition:opacity .45s}
+.sj-painel figure{position:relative;overflow:hidden;min-height:440px;background:var(--grafite)}
+.sj-painel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.1s var(--ease)}
+.sj-painel.ativo img{transform:none}
+.sj-texto{padding:clamp(26px,3vw,40px);display:flex;flex-direction:column;justify-content:center}
+.sj-chip{align-self:flex-start;font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:4px;border:1px solid rgba(139,229,42,.4);color:var(--neon)}
+.sj-texto h4{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(1.8rem,2.6vw,2.4rem);line-height:.95;margin:16px 0 14px}
+.sj-texto li{position:relative;padding:12px 0 12px 28px;border-top:1px solid var(--linha-c);color:var(--cinza-claro);font-size:.95rem;line-height:1.5}
+.sj-texto li::before{content:"";position:absolute;left:0;top:23px;width:14px;height:2px;background:var(--neon);box-shadow:0 0 6px rgba(139,229,42,.6)}
+.sj-texto>*,.sj-texto li{opacity:0;transform:translateY(8px)}
+.ativo .sj-texto>*,.ativo .sj-texto li{opacity:1;transform:none;transition:opacity .4s,transform .5s var(--ease)}
+.ativo .sj-texto h4{transition-delay:.05s}.ativo .sj-texto li:nth-child(1){transition-delay:.1s}.ativo .sj-texto li:nth-child(2){transition-delay:.14s}.ativo .sj-texto li:nth-child(3){transition-delay:.18s}
+
+/* ===== Avaliações ===== */
+.avaliacoes{background:var(--nevoa);overflow:hidden}
+.av-topo{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px 72px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+.placar-g{display:flex;align-items:center;gap:22px;margin-top:26px}
+.placar-g .num{font-family:var(--cond);font-weight:800;font-size:clamp(5.5rem,10vw,8.6rem);line-height:.8;color:var(--tinta);font-variant-numeric:tabular-nums}
+.placar-g .rot{display:flex;flex-direction:column;gap:6px;font-size:.95rem;color:var(--cinza)}
+.placar-g .rot b{color:var(--tinta);font-size:1.05rem}
+.placar-g .estrelas{color:var(--ps)}
+.placar-g .estrelas svg{width:19px;height:19px}
+.citacao{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(2.2rem,4.4vw,3.8rem);line-height:.95;position:relative;padding-left:28px}
+.citacao::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;background:var(--ps);border-radius:2px}
+.citacao cite{display:block;font-family:var(--sans);font-weight:500;text-transform:none;font-style:normal;font-size:.95rem;color:var(--cinza);margin-top:16px}
+.esteira{display:flex;flex-direction:column;gap:16px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.fileira{display:flex;gap:16px;width:max-content;animation:correr 70s linear infinite}
+.fileira.volta{animation-direction:reverse;animation-duration:80s}
+.esteira:hover .fileira{animation-play-state:paused}
+@keyframes correr{to{transform:translateX(-50%)}}
+.fileira blockquote{width:380px;flex:none;background:var(--branco);border-radius:6px;padding:22px 24px;font-size:.98rem;line-height:1.55;box-shadow:0 1px 0 var(--linha-e),0 14px 30px -22px rgba(20,21,23,.35);border-top:3px solid var(--ps)}
+.fileira cite{display:flex;justify-content:space-between;gap:12px;font-style:normal;font-weight:600;font-size:.86rem;margin-top:14px}
+.fileira cite i{font-style:normal;color:var(--ps-tinta);letter-spacing:1px}
+
+/* ===== Como começar ===== */
+.planos{background:var(--carbono);color:var(--branco);overflow:hidden}
+.planos::before{content:"";position:absolute;inset:0 auto 0 0;width:38%;background:repeating-linear-gradient(90deg,rgba(184,133,79,.08) 0 14px,transparent 14px 24px);-webkit-mask-image:linear-gradient(90deg,#000,transparent);mask-image:linear-gradient(90deg,#000,transparent);pointer-events:none}
+.relogio{display:flex;align-items:center;gap:28px;margin-bottom:30px}
+.relogio .min{font-family:var(--cond);font-weight:800;font-size:clamp(4rem,7vw,6rem);line-height:.8;color:var(--neon);text-shadow:0 0 22px rgba(139,229,42,.4);min-width:2.6ch;font-variant-numeric:tabular-nums}
+.linha-jogo{flex:1;position:relative;color:var(--branco)}
+.linha-jogo .regua i{opacity:.2;transition:opacity .2s,background-color .2s}
+.linha-jogo .regua i.on{opacity:1;background:var(--neon)}
+.linha-jogo .marcos{display:flex;justify-content:space-between;font-size:.74rem;color:var(--cinza-claro);margin-top:8px}
+.tempos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tempo{position:relative;padding:28px 26px 30px;border-radius:6px;background:var(--grafite);border:1px solid var(--linha-c);transition:border-color .5s,background-color .5s,transform .5s var(--ease)}
+.tempo .rot-t{font-family:var(--cond);font-weight:800;font-size:.95rem;letter-spacing:.08em;color:var(--cinza-claro);transition:color .4s}
+.tempo h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:clamp(1.8rem,2.6vw,2.3rem);line-height:.95;margin-top:10px}
+.tempo p{color:var(--cinza-claro);margin-top:12px;font-size:.96rem}
+.tempo::after{content:"";position:absolute;left:26px;right:26px;top:0;height:3px;background:var(--neon);transform:scaleX(0);transform-origin:left;transition:transform .6s var(--ease);box-shadow:var(--brilho)}
+.tempo.ativo{border-color:rgba(139,229,42,.4);background:#1C1F1A}
+.tempo.ativo .rot-t{color:var(--neon)}
+.tempo.ativo::after{transform:none}
+.tempo:nth-child(3){background:linear-gradient(160deg,#1E2419,var(--grafite))}
+.obs{display:flex;align-items:center;gap:12px;margin-top:28px;color:var(--cinza-claro);font-size:.95rem}
+.obs svg{width:22px;height:22px;color:var(--neon);flex:none}
+
+/* ===== Consultório ===== */
+.consultorio{background:var(--nevoa)}
+.local{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px}
+.local-foto{position:relative;border-radius:6px;overflow:hidden;min-height:600px;background:var(--concreto)}
+.local-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;transition:transform .8s var(--ease)}
+.local-foto:hover img{transform:scale(1.025)}
+.local-dir{display:grid;grid-template-rows:auto minmax(260px,1fr);gap:20px}
+.horas{background:var(--carbono);color:var(--branco);border-radius:6px;padding:clamp(26px,3vw,38px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 36px}
+.horas h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.8rem;line-height:1}
+.horas address{font-style:normal;color:var(--cinza-claro);margin-top:12px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;margin-top:16px;padding:6px 12px;border-radius:4px;background:rgba(247,247,244,.08)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--cinza-claro)}
+.status.aberto i{background:var(--neon);box-shadow:0 0 8px var(--neon)}
+.horarios{display:grid;grid-template-columns:auto auto;gap:10px 18px;align-content:start;font-size:.95rem}
+.horarios dt{color:var(--cinza-claro)}
+.horarios dd{text-align:right;font-weight:600}
+.horarios .hoje{color:var(--neon)}
+.chips{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.chips span{font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:4px;border:1px solid rgba(139,229,42,.4);color:var(--neon)}
+.horas .link{display:inline-block;margin-top:16px;color:var(--branco)}
+.mapa{position:relative;border-radius:6px;overflow:hidden;background:var(--concreto);min-height:260px}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.55) contrast(1.05)}
+
+/* ===== Carreira ===== */
+.carreira{background:var(--concreto);overflow:hidden}
+.car-grade{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(36px,5vw,80px);align-items:center}
+.parede{position:relative;border-radius:6px;padding:clamp(34px,4vw,56px) clamp(28px,3.4vw,48px);background:repeating-linear-gradient(90deg,var(--madeira) 0 18px,var(--madeira-2) 18px 20px,var(--madeira-3) 20px 26px,var(--madeira-2) 26px 28px);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),inset 0 -60px 80px -40px rgba(0,0,0,.35)}
+.parede::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.14),transparent 40%,rgba(0,0,0,.18));pointer-events:none}
+.parede figure{position:relative;z-index:1;border:10px solid var(--carbono);border-radius:3px;box-shadow:0 30px 50px -20px rgba(0,0,0,.6);aspect-ratio:3/4;overflow:hidden;background:var(--grafite)}
+.parede img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.parede .placa-nome{position:relative;z-index:1;margin-top:20px;display:flex;align-items:center;gap:14px;background:var(--carbono);color:var(--branco);border-radius:3px;padding:14px 18px;box-shadow:0 20px 34px -18px rgba(0,0,0,.6)}
+.parede .placa-nome svg{width:52px;height:19px;color:var(--neon);flex:none;filter:drop-shadow(0 0 5px rgba(139,229,42,.6))}
+.parede .placa-nome b{font-style:italic;font-stretch:125%;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;line-height:1.2}
+.parede .placa-nome small{display:block;color:var(--cinza-claro);font-weight:500;font-size:.72rem;letter-spacing:.04em;text-transform:none;font-style:normal;font-stretch:100%}
+.carreira .lead{color:#46494D}
+.carreira .titulo .aceso{color:#2F5A0A}
+.placas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:34px}
+.placa{position:relative;background:var(--carbono);color:var(--branco);border-radius:4px;padding:22px 22px 22px 26px;box-shadow:0 18px 30px -22px rgba(0,0,0,.55)}
+.placa::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:3px;background:var(--neon);box-shadow:0 0 8px rgba(139,229,42,.6);border-radius:0 2px 2px 0}
+.placa .quem{font-size:.78rem;font-weight:600;color:var(--neon);letter-spacing:.02em}
+.placa h3{font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.55rem;line-height:1;margin-top:6px}
+.placa p{font-size:.88rem;color:var(--cinza-claro);margin-top:8px;line-height:1.5}
+.placa.larga{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;background:linear-gradient(120deg,#16190F,var(--carbono) 60%)}
+.placa.larga .tag{font-family:var(--cond);font-weight:800;font-size:2.6rem;line-height:.9;color:var(--neon);text-shadow:0 0 18px rgba(139,229,42,.4);text-align:right}
+.placa.larga .tag small{display:block;font-size:.34em;color:var(--cinza-claro);text-shadow:none;letter-spacing:.06em}
+
+/* ===== Apito inicial ===== */
+.agendar{background:var(--carbono);color:var(--branco);overflow:hidden}
+.agendar::before{content:"";position:absolute;inset:0 0 0 55%;background:repeating-linear-gradient(90deg,rgba(184,133,79,.12) 0 16px,transparent 16px 26px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 40%);mask-image:linear-gradient(90deg,transparent,#000 40%);pointer-events:none}
+.ag-grade{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center}
+.msg-final{margin-top:28px;max-width:470px;background:var(--grafite);border:1px solid var(--linha-c);border-radius:6px 6px 6px 0;padding:16px 18px;font-size:.98rem}
+.msg-final small{display:block;font-size:.74rem;color:var(--cinza-claro);margin-bottom:4px}
+.agendar .acoes{margin-top:30px}
+.agendar .btn{font-size:1.05rem;min-height:54px;padding:14px 30px}
+.ag-foto{position:relative;justify-self:end;width:min(100%,440px)}
+.ag-foto figure{aspect-ratio:4/5;border-radius:6px;overflow:hidden;background:var(--grafite)}
+.ag-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.ag-foto svg{position:absolute;z-index:2;width:52%;left:-18%;top:-34px;filter:drop-shadow(0 0 6px rgba(139,229,42,.8)) drop-shadow(0 0 26px rgba(139,229,42,.4));color:var(--neon)}
+.zumbido{animation:zumbido 6s linear infinite}
+@keyframes zumbido{0%,92%,100%{opacity:1}93%{opacity:.55}94%{opacity:1}96%{opacity:.75}97%{opacity:1}}
+
+/* Rodapé */
+.rodape{background:var(--grafite);color:var(--cinza-claro);padding:64px 0 calc(28px + env(safe-area-inset-bottom));font-size:.92rem}
+.rodape .grade{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:36px}
+.rodape .marca{color:var(--branco)}
+.rodape .marca small{color:var(--neon)}
+.rodape .desc{margin-top:14px;max-width:34ch}
+.rodape h4{margin:0 0 12px;font-family:var(--cond);font-weight:800;text-transform:uppercase;font-size:1.15rem;color:var(--branco);letter-spacing:.02em}
+.rodape li{margin:6px 0}
+.rodape li a{text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:32px}
+.rodape li a:hover{color:var(--branco)}
+.rodape .ico{width:18px;height:18px;color:var(--neon)}
+.rodape .base{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:48px;padding-top:22px;border-top:1px solid var(--linha-c);font-size:.82rem}
+
+/* Barra do celular */
+.barra{display:none}
+
+/* Revelação */
+.js .rev{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .9s var(--ease)}
+.js .rev.visto{opacity:1;transform:none}
+.js .rev-d1{transition-delay:.08s}.js .rev-d2{transition-delay:.16s}.js .rev-d3{transition-delay:.24s}
+
+/* ===== Responsivo ===== */
+@media (max-width:1100px){
+  .menu{gap:18px}.menu a{font-size:.84rem}
+  .v1{left:-16px}.v2{right:-8px}
+}
+@media (max-width:960px){
+  .topo nav,.topo .btn{display:none}
+  .abrir{display:block}
+  .heroi{grid-template-columns:minmax(0,1fr);gap:40px}
+  .abertura{padding-top:100px}
+  .abertura::before{inset:42% 0 0 0}
+  .quadro{justify-self:stretch;width:100%;max-width:520px}
+  .foto-hero{max-height:none}
+  .v1{left:12px;bottom:14px}.v2{right:12px;top:14px}
+  .quadro::before{left:-10px}
+  .cabeca,.av-topo,.met-grade,.local,.car-grade,.ag-grade{grid-template-columns:minmax(0,1fr)}
+  .jornada{grid-template-columns:minmax(0,1fr)}
+  .palco{display:none}
+  .etapa,.etapa:first-child,.etapa:last-child{min-height:0;padding:34px 0;justify-content:flex-start}
+  .js .etapa{opacity:1}
+  .etapa figure{display:block;margin-top:20px;border-radius:6px;overflow:hidden;aspect-ratio:4/5;background:var(--concreto)}
+  .etapa figure img{width:100%;height:100%;object-fit:cover}
+  .met-foto{min-height:0;aspect-ratio:4/5}
+  .seujogo{grid-template-columns:minmax(0,1fr)}
+  .sj-abas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sj-luz{display:none}
+  .sj-aba{flex-direction:column;align-items:flex-start;gap:4px;background:rgba(247,247,244,.05)}
+  .sj-aba[aria-selected=true]{background:var(--neon)}
+  .sj-paineis{border-left:0;border-top:1px solid var(--linha-c)}
+  .sj-painel,.sj-painel[hidden]{grid-template-columns:minmax(0,1fr);align-content:start}
+  .sj-painel figure{min-height:0;aspect-ratio:4/3}
+  .tempos{grid-template-columns:minmax(0,1fr)}
+  .local-foto{min-height:0;aspect-ratio:4/5}
+  .local-dir{grid-template-rows:auto 300px}
+  .ag-foto{justify-self:start}
+  .ag-foto svg{left:auto;right:-6%;top:-26px;width:46%}
+  .rodape .grade{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .barra{display:block;position:fixed;left:0;right:0;bottom:0;z-index:80;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(13,14,15,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--linha-c);transform:translateY(110%);transition:transform .45s var(--ease)}
+  .barra.visivel{transform:none}
+  .barra .btn{width:calc(100% - 16px);margin:0 8px}
+  .rodape{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .horas{grid-template-columns:minmax(0,1fr)}
+  .placas{grid-template-columns:minmax(0,1fr)}
+  .placa.larga{grid-template-columns:minmax(0,1fr)}
+  .placa.larga .tag{text-align:left}
+  .rodape .grade{grid-template-columns:minmax(0,1fr)}
+  .fileira blockquote{width:300px}
+  .vidro{padding:10px 12px 10px 10px}
+  .vidro .ic{width:32px;height:32px}
+  .relogio{gap:18px}
+  .ponte{padding:24px 22px}
+  .dados{max-width:none}
+}
+@media (hover:none){.met-foto:hover img,.local-foto:hover img{transform:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js .letreiro path{fill-opacity:1;stroke-dashoffset:0}
+  .sj-texto>*,.sj-texto li{opacity:1;transform:none}
+  .fileira{animation:none}
+  .esteira{overflow-x:auto}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
+  <symbol id="ps" viewBox="0 0 280 100"><g fill="currentColor" transform="translate(37 0) skewX(-20)"><path d="M8 0H112V62H50V100H8V36H88V22H0Z"/><path d="M130 0H236V22H122Z"/><path d="M128 30H236V100H116V76H208V50H128Z"/></g></symbol>
+  <symbol id="i-estrela" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.94 6.2 6.81.78-5.06 4.63 1.37 6.71L12 17.4l-6.06 3.42 1.37-6.71L2.25 9.48l6.81-.78z"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-bola" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5l3.6 2.6-1.4 4.2H9.8l-1.4-4.2z"/><path d="M12 3v4.5M20.6 9.3l-5 .8M17.4 19.4l-3.2-5.1M6.6 19.4l3.2-5.1M3.4 9.3l5 .8"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-regua" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><rect x="2.5" y="7" width="19" height="10" rx="1.5"/><path d="M7 7v4M11 7v3M15 7v4M19 7v3"/></g></symbol>
+  <symbol id="i-prato" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="7"/><circle cx="12" cy="13" r="3.5"/><path d="M4 3v5M2.5 3v3.5a1.5 1.5 0 0 0 3 0V3M4 8v3M20 3c-1.4 1-2 2.6-2 4.5V9h2V3z"/></g></symbol>
+</svg>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Pedro Salvadori Nutrição Esportiva, início"><svg aria-hidden="true"><use href="#ps"/></svg><span><b>Pedro Salvadori</b><small>Nutrição esportiva</small></span></a>
+    <nav aria-label="Seções">
+      <ul class="menu">
+        <li><a href="#dia-de-jogo">Dia de jogo</a></li>
+        <li><a href="#metodo">O método</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#planos">Como começar</a></li>
+        <li><a href="#consultorio">Consultório</a></li>
+        <li><a href="#carreira">Carreira</a></li>
+      </ul>
+    </nav>
+    <a class="btn" data-wa="Oi, Pedro! Vim pelo site e quero agendar uma consulta."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar consulta</span></a>
+    <button class="abrir" type="button" aria-expanded="false" aria-controls="gaveta" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="gaveta" id="gaveta">
+  <a href="#dia-de-jogo">Dia de jogo</a>
+  <a href="#metodo">O método</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#planos">Como começar</a>
+  <a href="#consultorio">Consultório</a>
+  <a href="#carreira">Carreira</a>
+  <a class="btn" data-wa="Oi, Pedro! Vim pelo site e quero agendar uma consulta."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+</div>
+
+<main id="conteudo">
+  <!-- 1. Abertura: o letreiro do consultório acende -->
+  <section class="abertura" id="inicio">
+    <div class="wrap heroi">
+      <div>
+        <svg class="letreiro" viewBox="0 0 280 100" role="img" aria-label="Logo PS Nutrição Esportiva"><g transform="translate(37 0) skewX(-20)"><path pathLength="1" d="M8 0H112V62H50V100H8V36H88V22H0Z"/><path pathLength="1" d="M130 0H236V22H122Z"/><path pathLength="1" d="M128 30H236V100H116V76H208V50H128Z"/></g></svg>
+        <span class="letreiro-nome">Pedro Salvadori<small>Nutrição esportiva</small></span>
+        <h1><span class="l"><span>Nutrição de clube</span></span><span class="l"><span class="aceso">para o seu treino</span></span></h1>
+        <p class="sub">O Pedro é o nutricionista do <b>Sub-20 do Desportivo Brasil</b>. No consultório em Salto e no on-line, ele atende quem faz academia, corre ou joga bola e quer ver resultado.</p>
+        <div class="acoes">
+          <a class="btn-linha" href="#dia-de-jogo">Ver um dia de jogo com ele<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+          <a class="nota" href="#avaliacoes"><span class="num" data-conta="5.0" data-casas="1">5,0</span><span class="rot"><span class="estrelas" aria-hidden="true"><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg></span>20 avaliações no Google</span></a>
+        </div>
+      </div>
+      <div class="quadro">
+        <figure class="foto-hero"><img src="img/pedro-estadio.jpg?v=1" alt="Pedro Salvadori no gramado do estádio, com as garrafas de hidratação dos atletas aos pés" width="1281" height="1600" fetchpriority="high"></figure>
+        <div class="vidro v2"><span class="ic"><svg aria-hidden="true"><use href="#i-bola"/></svg></span><span><strong>Desportivo Brasil</strong><span>Paulista Sub-20 2026</span></span></div>
+        <div class="vidro v1"><span class="ic"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><span><strong>Salto e on-line</strong><span>consultório na Vila Roma</span></span></div>
+      </div>
+    </div>
+    <div class="wrap regua-heroi" aria-hidden="true"><div class="regua" id="regua-heroi"></div></div>
+  </section>
+
+  <!-- 2. Um dia de jogo: o trabalho dele como identidade -->
+  <section class="jogo-dia secao" id="dia-de-jogo" aria-labelledby="dj-titulo">
+    <div class="wrap">
+      <div class="cabeca rev">
+        <h2 class="titulo" id="dj-titulo">Um dia de jogo <span class="aceso">com o Pedro</span></h2>
+        <p class="lead">No Desportivo Brasil, clube formador de Porto Feliz, o Pedro cuida da nutrição dos atletas do Sub-20, do lanche antes da partida ao relatório depois dela.</p>
+      </div>
+      <div class="jornada">
+        <div class="palco" id="palco">
+          <img class="ativa" src="img/lanches-jogo.jpg?v=1" alt="Mesa com frutas, lanches e garrafas preparados para os atletas" width="1200" height="1600" loading="lazy">
+          <img src="img/jogo-garrafas.jpg?v=1" alt="Garrafas de hidratação preparadas e marcadas à caneta" width="1050" height="1400" loading="lazy">
+          <img src="img/vestiario.jpg?v=1" alt="Mesa de alimentação montada no vestiário, com as camisas do time penduradas" width="1200" height="1600" loading="lazy">
+          <img src="img/pedro-atletas.jpg?v=1" alt="Pedro à beira do campo com os atletas, segurando o carregador de garrafas" width="1200" height="1600" loading="lazy">
+          <img src="img/jogo-pos.jpg?v=1" alt="Copos de reposição e lanches prontos para depois do jogo" width="1050" height="1400" loading="lazy">
+          <img src="img/jogo-relatorio.jpg?v=1" alt="Notebook na arquibancada com o relatório de perda hídrica do jogo" width="1050" height="1400" loading="lazy">
+          <span class="selo-clube"><svg aria-hidden="true"><use href="#i-bola"/></svg>Sub-20 do Desportivo Brasil</span>
+          <div class="fase" aria-hidden="true">
+            <div class="fase-topo"><span class="fase-n" id="fase-n">01<small>/06</small></span><span class="fase-nome" id="fase-nome">Antes do jogo</span></div>
+            <div class="regua" id="regua-fase"></div>
+          </div>
+        </div>
+        <ol class="etapas" id="etapas">
+          <li class="etapa ativa" data-nome="Antes do jogo">
+            <span class="n">01</span>
+            <h3>Antes do jogo</h3>
+            <p>Frutas, lanches e garrafas separados para o grupo. No dia de jogo, o Pedro prioriza <b>refeições bem toleradas e de fácil digestão</b>, para ninguém entrar em campo pesado.</p>
+            <figure><img src="img/lanches-jogo.jpg?v=1" alt="Mesa com frutas, lanches e garrafas preparados para os atletas" width="1200" height="1600" loading="lazy"></figure>
+          </li>
+          <li class="etapa" data-nome="Hidratação">
+            <span class="n">02</span>
+            <h3>Garrafa por garrafa</h3>
+            <p>As garrafas saem preparadas e marcadas à caneta. A hidratação começa horas antes: a recomendação que ele ensina é de <b>5 a 7 mL de líquido por quilo</b>, cerca de 4 horas antes da atividade.</p>
+            <figure><img src="img/jogo-garrafas.jpg?v=1" alt="Garrafas de hidratação preparadas e marcadas à caneta" width="1050" height="1400" loading="lazy"></figure>
+          </li>
+          <li class="etapa" data-nome="Vestiário">
+            <span class="n">03</span>
+            <h3>No vestiário</h3>
+            <p>A mesa fica montada entre as camisas penduradas, e o atleta come e bebe ali mesmo antes de subir para o campo.</p>
+            <figure><img src="img/vestiario.jpg?v=1" alt="Mesa de alimentação montada no vestiário, com as camisas do time penduradas" width="1200" height="1600" loading="lazy"></figure>
+          </li>
+          <li class="etapa" data-nome="Beira do campo">
+            <span class="n">04</span>
+            <h3>À beira do campo</h3>
+            <p>No treino e no jogo, ele fica à beira do campo com o carregador de garrafas, cuidando da <b>hidratação e da reposição de eletrólitos</b>.</p>
+            <figure><img src="img/pedro-atletas.jpg?v=1" alt="Pedro à beira do campo com os atletas, segurando o carregador de garrafas" width="1200" height="1600" loading="lazy"></figure>
+          </li>
+          <li class="etapa" data-nome="Pós-jogo">
+            <span class="n">05</span>
+            <h3>Depois do apito</h3>
+            <p>Quando o jogo acaba, a reposição já está servida nos copos para a recuperação começar logo.</p>
+            <figure><img src="img/jogo-pos.jpg?v=1" alt="Copos de reposição e lanches prontos para depois do jogo" width="1050" height="1400" loading="lazy"></figure>
+          </li>
+          <li class="etapa" data-nome="Relatório">
+            <span class="n">06</span>
+            <h3>O relatório do jogo</h3>
+            <p>Cada atleta é pesado antes e depois da partida. Com o clima anotado, o <b>relatório de perda hídrica</b> mostra quanto líquido cada um perdeu e orienta a estratégia do próximo jogo.</p>
+            <dl class="dados">
+              <div><dt>Pesagem</dt><dd>Antes e depois</dd></div>
+              <div><dt>Clima</dt><dd>Temperatura, umidade, vento</dd></div>
+              <div><dt>Por atleta</dt><dd>Variação de peso</dd></div>
+              <div><dt>Resultado</dt><dd>% de desidratação</dd></div>
+            </dl>
+            <figure><img src="img/jogo-relatorio.jpg?v=1" alt="Notebook na arquibancada com o relatório de perda hídrica do jogo" width="1050" height="1400" loading="lazy"></figure>
+          </li>
+        </ol>
+      </div>
+      <div class="ponte rev">
+        <p>O paciente dele recebe <span>o mesmo cuidado.</span></p>
+        <a class="btn-linha" href="#metodo">Ver como funciona<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. O método no plano do paciente -->
+  <section class="metodo secao escuro-s" id="metodo" aria-labelledby="met-titulo">
+    <div class="wrap">
+      <div class="cabeca rev">
+        <h2 class="titulo" id="met-titulo">O método do clube <span class="aceso">no seu plano</span></h2>
+        <p class="lead">Não precisa ser atleta. Quem treina na academia, corre ou joga no fim de semana passa pela mesma avaliação e tem o Pedro por perto durante o acompanhamento.</p>
+      </div>
+      <div class="met-grade">
+        <figure class="met-foto rev"><img src="img/adipometro.jpg?v=1" alt="Adipômetro no estojo, usado na avaliação física do consultório" width="1200" height="1600" loading="lazy"><span class="etq"><i></i>Avaliação física no consultório</span></figure>
+        <div class="pilares">
+          <div class="pilar rev"><span class="ic"><svg aria-hidden="true"><use href="#i-regua"/></svg></span><div><h3>Avaliação além da balança</h3><p>Antropometrista com certificação ISAK nível 1, o Pedro mede dobras cutâneas e circunferências para acompanhar gordura e massa muscular, não só o peso.</p></div></div>
+          <div class="pilar rev rev-d1"><span class="ic"><svg aria-hidden="true"><use href="#i-prato"/></svg></span><div><h3>Um plano que cabe na sua rotina</h3><p>O cardápio parte do seu treino, dos seus horários e das suas preferências.</p><q>Te ajudo a ter resultados com um planejamento que funciona para você!</q><small>Pedro Salvadori</small></div></div>
+          <div class="pilar rev rev-d2"><span class="ic"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><div><h3>Acompanhamento de perto</h3><p>Dúvidas no dia a dia pelo WhatsApp e aplicativos que facilitam a rotina.</p><q>A consulta não acaba no consultório.</q><small>Adriana Silva, no Google</small></div></div>
+        </div>
+      </div>
+      <div class="seujogo rev" id="seu-jogo">
+        <div class="sj-lado">
+          <h3>Qual é o seu jogo?</h3>
+          <p>Escolha o seu treino e veja como o Pedro monta o plano. A escolha vai junto na mensagem do WhatsApp.</p>
+          <div class="sj-abas" role="tablist" aria-label="Seu tipo de treino">
+            <span class="sj-luz" aria-hidden="true"></span>
+            <button class="sj-aba" role="tab" id="aba-musc" aria-controls="pn-musc" aria-selected="true" data-msg="Faço musculação e quero um plano para ganhar massa."><b>Musculação</b><span>hipertrofia e força</span></button>
+            <button class="sj-aba" role="tab" id="aba-corrida" aria-controls="pn-corrida" aria-selected="false" tabindex="-1" data-msg="Corro e quero um plano para o meu treino."><b>Corrida</b><span>rua, esteira e provas</span></button>
+            <button class="sj-aba" role="tab" id="aba-fut" aria-controls="pn-fut" aria-selected="false" tabindex="-1" data-msg="Jogo futebol e quero um plano para render mais em campo."><b>Futebol</b><span>society, várzea e campo</span></button>
+            <button class="sj-aba" role="tab" id="aba-emag" aria-controls="pn-emag" aria-selected="false" tabindex="-1" data-msg="Quero emagrecer com saúde, com um plano para a minha rotina."><b>Emagrecer</b><span>com saúde e rotina</span></button>
+          </div>
+        </div>
+        <div class="sj-paineis">
+          <div class="sj-painel ativo" role="tabpanel" id="pn-musc" aria-labelledby="aba-musc">
+            <figure><img style="object-position:50% 18%" src="img/perfil-musculacao.jpg?v=1" alt="Pedro na academia, entre os aparelhos de musculação" width="900" height="1200" loading="lazy"></figure>
+            <div class="sj-texto">
+              <span class="sj-chip">Pós em Nutrição Esportiva e Hipertrofia</span>
+              <h4>Ganhar massa muscular</h4>
+              <ul>
+                <li>Refeições organizadas em volta do horário do seu treino</li>
+                <li>Avaliação ISAK para saber quanto você ganhou de músculo e perdeu de gordura</li>
+                <li>Plano ajustado durante o acompanhamento, conforme a evolução</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sj-painel" role="tabpanel" id="pn-corrida" aria-labelledby="aba-corrida" hidden>
+            <figure><img src="img/perfil-corrida.jpg?v=1" alt="Treino na esteira, visto de cima" width="900" height="1200" loading="lazy"></figure>
+            <div class="sj-texto">
+              <span class="sj-chip">5 a 7 mL por kg, 4 horas antes (ACSM)</span>
+              <h4>Chegar ao treino hidratado</h4>
+              <ul>
+                <li>A hidratação começa horas antes: para 70 kg, de 350 a 490 mL</li>
+                <li>O calor, a duração do treino e o quanto você sua mudam essa conta</li>
+                <li>Água e eletrólitos planejados para treinos longos e provas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sj-painel" role="tabpanel" id="pn-fut" aria-labelledby="aba-fut" hidden>
+            <figure><img src="img/roda-time.jpg?v=1" alt="Pedro reunido com os atletas do Sub-20 no campo de treino" width="1200" height="1600" loading="lazy"></figure>
+            <div class="sj-texto">
+              <span class="sj-chip">Nutricionista do Sub-20 do Desportivo Brasil</span>
+              <h4>O dia de jogo do clube no seu fim de semana</h4>
+              <ul>
+                <li>Refeição bem tolerada e de fácil digestão antes do jogo</li>
+                <li>Hidratação e reposição de eletrólitos planejadas</li>
+                <li>Reposição logo depois da partida</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sj-painel" role="tabpanel" id="pn-emag" aria-labelledby="aba-emag" hidden>
+            <figure><img src="img/perfil-emagrecer.jpg?v=1" alt="Prato com arroz, legumes, edamame e frutas" width="900" height="1200" loading="lazy"></figure>
+            <div class="sj-texto">
+              <span class="sj-chip">“Vi mudanças reais desde o primeiro mês”</span>
+              <h4>Emagrecer sem largar a rotina</h4>
+              <ul>
+                <li>Plano alimentar feito com as suas preferências</li>
+                <li>Dúvidas no dia a dia pelo WhatsApp</li>
+                <li>Aplicativos que facilitam o acompanhamento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Avaliações -->
+  <section class="avaliacoes secao" id="avaliacoes" aria-labelledby="av-titulo">
+    <div class="wrap">
+      <div class="av-topo">
+        <div class="rev">
+          <h2 class="titulo" id="av-titulo">O placar <span class="aceso">dos pacientes</span></h2>
+          <div class="placar-g"><span class="num" data-conta="5.0" data-casas="1">5,0</span><span class="rot"><span class="estrelas" aria-hidden="true"><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg><svg><use href="#i-estrela"/></svg></span><b><span data-conta="20" data-casas="0">20</span> avaliações no Google</b><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Pedro+Salvadori+Nutri%C3%A7%C3%A3o+Esportiva+Salto" target="_blank" rel="noopener">Ler no Google</a></span></div>
+        </div>
+        <blockquote class="citacao rev rev-d1">Vi mudanças reais desde o primeiro mês.<cite>Felipe Barbugiani, paciente, no Google</cite></blockquote>
+      </div>
+    </div>
+    <div class="esteira" aria-label="Avaliações do Google">
+      <div class="fileira">
+        <blockquote>“Profissional de excelência que respeita a individualidade e preferência do paciente. Atendimento e plano alimentar personalizado, priorizando a saúde, a rotina e o emagrecimento.”<cite>Renata Prado <i>★★★★★</i></cite></blockquote>
+        <blockquote>“A consulta não acaba no consultório, ele te deixa à vontade para tirar dúvidas no dia a dia através do WhatsApp. Super recomendo.”<cite>Adriana Silva <i>★★★★★</i></cite></blockquote>
+        <blockquote>“Serviço sensacional, vi mudanças reais desde o primeiro mês, o acompanhamento é próximo e com aplicativos que facilitam muito o dia!”<cite>Felipe Barbugiani <i>★★★★★</i></cite></blockquote>
+        <blockquote>“Excelente profissional, acompanha todo processo e entrega um ótimo resultado.”<cite>Destaque no Google</cite></blockquote>
+      </div>
+      <div class="fileira volta">
+        <blockquote>“Excelente profissional, um atendimento de primeira, os objetivos se alcançam fazendo tudo o que ele manda.”<cite>Ronald Perez <i>★★★★★</i></cite></blockquote>
+        <blockquote>“Excelente profissional, preços justos, fácil contato e acompanhamento incrível.”<cite>Destaque no Google</cite></blockquote>
+        <blockquote>“Foi uma experiência muito positiva, me ajudou muito nos meus resultados. E eu super recomendo!”<cite>Diego Bela Verga <i>★★★★★</i></cite></blockquote>
+        <blockquote>“Respeita a individualidade e preferência do paciente.”<cite>Renata Prado <i>★★★★★</i></cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Como começar -->
+  <section class="planos secao escuro-s" id="planos" aria-labelledby="planos-titulo">
+    <div class="wrap">
+      <div class="cabeca rev">
+        <h2 class="titulo" id="planos-titulo">Como começar: <span class="aceso">o seu jogo</span></h2>
+        <p class="lead">A consulta é o aquecimento. Para o resultado aparecer e ficar, o acompanhamento vai até o fim da partida.</p>
+      </div>
+      <div id="jogo">
+        <div class="relogio" aria-hidden="true"><span class="min" id="minuto">0'</span><div class="linha-jogo"><div class="regua" id="regua-jogo"></div><div class="marcos"><span>0'</span><span>45'</span><span>90'</span></div></div></div>
+        <ol class="tempos">
+          <li class="tempo" id="consulta" data-de="0"><span class="rot-t">Aquecimento</span><h3>Consulta</h3><p>Avaliação física com antropometria e um planejamento feito para a sua rotina e os seus objetivos.</p></li>
+          <li class="tempo" id="plano-90" data-de="15"><span class="rot-t">1º tempo</span><h3>Acompanhamento de 90 dias</h3><p>Ajustes no plano e dúvidas no dia a dia pelo WhatsApp e pelos aplicativos, como contam os pacientes.</p></li>
+          <li class="tempo" id="plano-180" data-de="45"><span class="rot-t">2º tempo</span><h3>Acompanhamento de 180 dias</h3><p>Mais tempo para o resultado se firmar e a nova alimentação virar hábito.</p></li>
+        </ol>
+      </div>
+      <p class="obs"><svg aria-hidden="true"><use href="#i-chat"/></svg>Presencial em Salto ou on-line. Valores e horários você combina direto com o Pedro, pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- 6. Consultório -->
+  <section class="consultorio secao" id="consultorio" aria-labelledby="cons-titulo">
+    <div class="wrap">
+      <div class="cabeca rev">
+        <h2 class="titulo" id="cons-titulo">O consultório <span class="aceso">na Vila Roma</span></h2>      </div>
+      <div class="local">
+        <figure class="local-foto rev"><img src="img/consultorio-ps.jpg?v=1" alt="Consultório PS Nutrição Esportiva, com o logo verde na parede e o painel de ripas de madeira" width="1200" height="1600" loading="lazy"></figure>
+        <div class="local-dir">
+          <div class="horas rev rev-d1">
+            <div>
+              <h3>Endereço</h3>
+              <address>Rua 24 de Outubro, 1797<br>Vila Roma, Salto, SP<br>13321-430</address>
+              <span class="status" id="status"><i></i><span>Horário de atendimento</span></span>
+              <div class="chips"><span>Presencial</span><span>On-line</span></div>
+            </div>
+            <div>
+              <h3>Horários</h3>
+              <dl class="horarios" style="margin-top:14px">
+                <dt data-dias="1,2,3,4,5">Segunda a sexta</dt><dd data-dias="1,2,3,4,5">8h às 20h</dd>
+                <dt data-dias="6">Sábado</dt><dd data-dias="6">8h às 12h</dd>
+                <dt data-dias="0">Domingo</dt><dd data-dias="0">Fechado</dd>
+              </dl>
+              <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+24+de+Outubro,+1797+-+Vila+Roma,+Salto+-+SP,+13321-430" target="_blank" rel="noopener">Como chegar</a>
+            </div>
+          </div>
+          <div class="mapa rev rev-d2">
+            <iframe title="Mapa do consultório na Rua 24 de Outubro, 1797, Salto" src="https://www.google.com/maps?q=Rua+24+de+Outubro,+1797+-+Vila+Roma,+Salto+-+SP,+13321-430&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Carreira: a parede do consultório -->
+  <section class="carreira secao" id="carreira" aria-labelledby="car-titulo">
+    <div class="wrap car-grade">
+      <div class="parede rev">
+        <figure><img src="img/pedro-retrato.jpg?v=1" alt="Retrato de Pedro Salvadori com o uniforme e a credencial do Campeonato Paulista" width="823" height="1097" loading="lazy"></figure>
+        <div class="placa-nome"><svg aria-hidden="true"><use href="#ps"/></svg><b>Pedro Salvadori<small>Nutricionista esportivo</small></b></div>
+      </div>
+      <div>
+        <h2 class="titulo rev" id="car-titulo">Uma carreira <span class="aceso">dentro do esporte</span></h2>
+        <p class="lead rev rev-d1">O Pedro trabalha no futebol de base e se especializou em nutrição esportiva pelo centro de inovação do FC Barcelona. No consultório, ele usa a mesma formação com cada paciente.</p>
+        <div class="placas">
+          <div class="placa larga rev"><div><span class="quem">Desportivo Brasil</span><h3>Nutricionista do Sub-20</h3><p>Campeonato Paulista Sub-20 2026, com o time nas oitavas de final contra o São Paulo.</p></div><span class="tag" aria-hidden="true">Sub-20<small>Paulista 2026</small></span></div>
+          <div class="placa rev rev-d1"><span class="quem">Barça Innovation Hub</span><h3>Especialização em Nutrição Esportiva</h3><p>Pela divisão de educação do FC Barcelona, concluída em 2025.</p></div>
+          <div class="placa rev rev-d2"><span class="quem">Uniguaçu</span><h3>Pós-graduação</h3><p>Nutrição Esportiva e Hipertrofia.</p></div>
+          <div class="placa rev rev-d1"><span class="quem">ISAK nível 1</span><h3>Antropometrista</h3><p>Certificação internacional em medidas corporais, usada na avaliação dos pacientes.</p></div>
+          <div class="placa rev rev-d2"><span class="quem">TUFE</span><h3>Inglês para o futebol</h3><p>Estuda inglês voltado ao futebol para acompanhar as pesquisas de fora do país.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Apito inicial -->
+  <section class="agendar secao escuro-s" id="agendar" aria-labelledby="agendar-titulo">
+    <div class="wrap ag-grade">
+      <div class="rev">
+        <h2 class="titulo" id="agendar-titulo">Apito inicial: <span class="aceso">agende sua consulta</span></h2>
+        <p class="lead">O agendamento é pelo WhatsApp, com a mensagem pronta. Se você escolheu o seu treino lá em cima, ele vai junto.</p>
+        <div class="msg-final"><small>Sua mensagem</small><span id="msg-final">Oi, Pedro! Vim pelo site e quero agendar uma consulta.</span></div>
+        <div class="acoes">
+          <a class="btn" data-wa="Oi, Pedro! Vim pelo site e quero agendar uma consulta."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Agendar consulta pelo WhatsApp</a>
+          <a class="btn-linha" href="#seu-jogo">Escolher meu treino<svg aria-hidden="true"><use href="#i-seta"/></svg></a>
+        </div>
+      </div>
+      <div class="ag-foto rev rev-d1">
+        <svg class="zumbido" viewBox="0 0 280 100" aria-hidden="true"><use href="#ps"/></svg>
+        <figure><img src="img/pedro-garrafas.jpg?v=1" alt="Pedro caminhando no estádio com garrafas de hidratação nas mãos" width="1281" height="1600" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="grade">
+      <div>
+        <a class="marca" href="#inicio" aria-label="Pedro Salvadori Nutrição Esportiva, início"><svg aria-hidden="true"><use href="#ps"/></svg><span><b>Pedro Salvadori</b><small>Nutrição esportiva</small></span></a>
+        <p class="desc">Nutrição, performance e saúde. Consultório em Salto, SP, e atendimento on-line.</p>
+      </div>
+      <div><h4>Navegação</h4><ul><li><a href="#dia-de-jogo">Dia de jogo</a></li><li><a href="#metodo">O método</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#carreira">Carreira</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li><a data-wa="Oi, Pedro! Vim pelo site e quero agendar uma consulta."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>(19) 99850-3586</a></li><li><a href="https://www.instagram.com/pedrosalvadori.nutri/" target="_blank" rel="noopener">Instagram @pedrosalvadori.nutri</a></li></ul></div>
+      <div><h4>Consultório</h4><ul><li><a href="#consultorio">Rua 24 de Outubro, 1797, Vila Roma, Salto, SP</a></li><li><span>Seg a sex 8h às 20h. Sáb 8h às 12h</span></li></ul></div>
+    </div>
+    <div class="base"><span>© 2026 Pedro Salvadori, nutricionista esportivo.</span><span>Salto, SP</span></div>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <a class="btn" data-wa="Oi, Pedro! Vim pelo site e quero agendar uma consulta."><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span data-rotulo="barra">Agendar consulta</span></a>
+</div>
+
+<script>
+(function(){
+  var numero = '5519998503586';
+  var reduzido = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var escolha = null;
+  function mensagem(el){ return escolha ? 'Oi, Pedro! Vim pelo site. ' + escolha : el.getAttribute('data-wa'); }
+  function atualizarLinks(){
+    document.querySelectorAll('[data-wa]').forEach(function(el){
+      el.href = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(mensagem(el));
+      el.target = '_blank'; el.rel = 'noopener';
+    });
+  }
+  atualizarLinks();
+
+  // Réguas de tracinhos (a assinatura dos posts dele)
+  function regua(el, n){ var h = ''; for (var i = 0; i < n; i++) h += '<i></i>'; el.innerHTML = h; return el.children; }
+  var tHeroi = regua(document.getElementById('regua-heroi'), innerWidth < 700 ? 30 : 60);
+  var tFase = regua(document.getElementById('regua-fase'), 36);
+  var tJogo = regua(document.getElementById('regua-jogo'), 46);
+
+  // Entrada: o letreiro acende
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.documentElement.classList.add('carregou'); }); });
+  (function acenderRegua(){
+    if (reduzido){ Array.prototype.forEach.call(tHeroi, function(t){ t.classList.add('on'); }); return; }
+    var i = 0, n = tHeroi.length;
+    setTimeout(function passo(){ if (i < n){ tHeroi[i++].classList.add('on'); setTimeout(passo, 1100 / n); } }, 1300);
+  })();
+
+  // Qual é o seu jogo? (abas com a luz neon deslizando)
+  var abas = Array.prototype.slice.call(document.querySelectorAll('.sj-aba')), luz = document.querySelector('.sj-luz'), msgFinal = document.getElementById('msg-final');
+  function moverLuz(){ var a = abas.filter(function(x){ return x.getAttribute('aria-selected') === 'true'; })[0]; luz.style.transform = 'translateY(' + a.offsetTop + 'px)'; luz.style.height = a.offsetHeight + 'px'; }
+  function escolher(aba, interagiu, foco){
+    abas.forEach(function(x){
+      var on = x === aba, pn = document.getElementById(x.getAttribute('aria-controls'));
+      x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1;
+      pn.classList.toggle('ativo', on); if (on) pn.removeAttribute('hidden'); else pn.setAttribute('hidden', '');
+    });
+    if (foco) aba.focus();
+    moverLuz();
+    if (interagiu){
+      escolha = aba.dataset.msg; atualizarLinks();
+      msgFinal.textContent = mensagem(document.body);
+      var r = document.querySelector('[data-rotulo="barra"]'); if (r) r.textContent = 'Agendar: ' + aba.querySelector('b').textContent.toLowerCase();
+    }
+  }
+  abas.forEach(function(a, i){
+    a.addEventListener('click', function(){ escolher(a, true); });
+    a.addEventListener('keydown', function(e){
+      var k = {ArrowDown:1, ArrowRight:1, ArrowUp:-1, ArrowLeft:-1}[e.key], n = abas.length, j = null;
+      if (k) j = (i + k + n) % n; else if (e.key === 'Home') j = 0; else if (e.key === 'End') j = n - 1;
+      if (j !== null){ e.preventDefault(); escolher(abas[j], true, true); }
+    });
+  });
+  escolher(abas[0], false);
+  addEventListener('resize', moverLuz);
+  if (document.fonts) document.fonts.ready.then(moverLuz);
+
+  // Menu
+  var topo = document.getElementById('topo'), botao = document.querySelector('.abrir');
+  function fechar(){ document.body.classList.remove('aberto'); botao.setAttribute('aria-expanded','false'); botao.setAttribute('aria-label','Abrir menu'); }
+  botao.addEventListener('click', function(){
+    var abrir = !document.body.classList.contains('aberto');
+    document.body.classList.toggle('aberto', abrir);
+    botao.setAttribute('aria-expanded', String(abrir));
+    botao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+  });
+  document.querySelectorAll('.gaveta a').forEach(function(a){ a.addEventListener('click', fechar); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') fechar(); });
+  var escuras = ['inicio','metodo','planos','agendar'].map(function(id){ return document.getElementById(id); }).concat([document.querySelector('.rodape')]);
+  function corDoMenu(){
+    var sobre = escuras.some(function(s){ var r = s.getBoundingClientRect(); return r.top <= 40 && r.bottom > 40; });
+    topo.classList.toggle('rolou', scrollY > 10);
+    topo.classList.toggle('escuro', scrollY > 10 && sobre);
+  }
+  addEventListener('scroll', corDoMenu, {passive:true}); corDoMenu();
+
+  // Barra do celular
+  var barra = document.getElementById('barra'), passou = false, noFim = false;
+  function barraVis(){ barra.classList.toggle('visivel', passou && !noFim); }
+  new IntersectionObserver(function(es){ passou = !es[0].isIntersecting; barraVis(); }, {rootMargin:'-40% 0px 0px 0px'}).observe(document.getElementById('inicio'));
+  new IntersectionObserver(function(es){ noFim = es.some(function(e){ return e.isIntersecting || e.boundingClientRect.top < 0; }); barraVis(); }).observe(document.getElementById('agendar'));
+
+  // Um dia de jogo: o palco troca a foto e a régua acende por etapa
+  var etapas = document.querySelectorAll('.etapa'), fotos = document.querySelectorAll('#palco img'), faseN = document.getElementById('fase-n'), faseNome = document.getElementById('fase-nome');
+  var atual = -1;
+  function irPara(i){
+    if (i === atual) return; atual = i;
+    etapas.forEach(function(e, k){ e.classList.toggle('ativa', k === i); });
+    fotos.forEach(function(f, k){ f.classList.toggle('ativa', k === i); });
+    faseN.innerHTML = '0' + (i + 1) + '<small>/06</small>';
+    faseNome.textContent = etapas[i].dataset.nome;
+    var acesos = Math.round((i + 1) / etapas.length * tFase.length);
+    Array.prototype.forEach.call(tFase, function(t, k){ t.classList.toggle('on', k < acesos); });
+  }
+  var ioEtapa = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting) irPara(Array.prototype.indexOf.call(etapas, e.target)); });
+  }, {rootMargin:'-45% 0px -45% 0px'});
+  etapas.forEach(function(e){ ioEtapa.observe(e); });
+  irPara(0);
+
+  // Esteira
+  document.querySelectorAll('.fileira').forEach(function(f){
+    Array.prototype.slice.call(f.children).forEach(function(b){ var c = b.cloneNode(true); c.setAttribute('aria-hidden','true'); f.appendChild(c); });
+  });
+
+  // Contadores
+  function contar(el){
+    if (reduzido) return;
+    var alvo = parseFloat(el.dataset.conta), casas = +el.dataset.casas, t0 = performance.now(), dur = 1400;
+    (function passo(t){
+      var k = Math.min(1, Math.max(0, (t - t0) / dur)), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = (alvo * e).toFixed(casas).replace('.', ',');
+      if (k < 1) requestAnimationFrame(passo);
+    })(t0);
+  }
+
+  // Como começar: cronômetro de 0' a 90'
+  var jogo = document.getElementById('jogo'), minuto = document.getElementById('minuto'), tempos = document.querySelectorAll('.tempo');
+  function marcar(m){
+    minuto.textContent = m + "'";
+    var acesos = Math.round(m / 90 * tJogo.length);
+    Array.prototype.forEach.call(tJogo, function(t, k){ t.classList.toggle('on', k < acesos); });
+    tempos.forEach(function(el){ el.classList.toggle('ativo', m >= +el.dataset.de && (m > +el.dataset.de || +el.dataset.de === 0)); });
+  }
+  function rolar(){
+    if (reduzido){ marcar(90); return; }
+    var t0 = performance.now(), dur = 3200;
+    (function passo(t){
+      var k = Math.min(1, Math.max(0, (t - t0) / dur));
+      marcar(Math.round(90 * k));
+      if (k < 1) requestAnimationFrame(passo);
+    })(t0);
+  }
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var el = e.target; io.unobserve(el);
+      if (el.classList.contains('rev')) el.classList.add('visto');
+      if (el.dataset.conta) contar(el);
+      if (el === jogo) rolar();
+    });
+  }, {threshold:.2, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rev,[data-conta]').forEach(function(el){ io.observe(el); });
+  io.observe(jogo);
+
+  // Aberto agora
+  try {
+    var partes = new Intl.DateTimeFormat('en-US', {timeZone:'America/Sao_Paulo', weekday:'short', hour:'numeric', minute:'numeric', hour12:false}).formatToParts(new Date());
+    var p = {}; partes.forEach(function(x){ p[x.type] = x.value; });
+    var dia = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday);
+    var min = (parseInt(p.hour,10) % 24) * 60 + parseInt(p.minute,10);
+    var fim = dia >= 1 && dia <= 5 ? 1200 : dia === 6 ? 720 : 0;
+    var aberto = fim && min >= 480 && min < fim;
+    var st = document.getElementById('status');
+    st.classList.toggle('aberto', !!aberto);
+    st.querySelector('span').textContent = aberto ? 'Aberto agora' : 'Fechado agora';
+    document.querySelectorAll('.horarios [data-dias]').forEach(function(el){ if (el.dataset.dias.split(',').indexOf(String(dia)) > -1) el.classList.add('hoje'); });
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>
